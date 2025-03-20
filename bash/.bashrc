@@ -12,5 +12,7 @@ PS1='[\u@\h \W]\$ '
 alias vi=nvim
 alias ll='ls -al'
 
+export PATH=$PATH:~/bin/
+
 # execute starship
 eval "$(starship init bash)"

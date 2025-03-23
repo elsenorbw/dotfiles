@@ -18,6 +18,7 @@
         "cpu",
         "memory",
         "temperature",
+        "wireplumber",
         "hyprland/language",
         "clock"
     ],
@@ -124,6 +125,11 @@
     },
     "battery#bat2": {
         "bat": "BAT2"
+    },
+    "wireplumber": {
+    	"format": " {volume}%",
+    	"format-muted": "",
+    	"on-click": "helvum"
     },
     "power-profiles-daemon": {
       "format": "{icon}",

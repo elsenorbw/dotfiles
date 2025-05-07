@@ -16,3 +16,8 @@ export PATH=$PATH:~/bin/
 
 # execute starship
 eval "$(starship init bash)"
+
+# ASDF
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+. <(asdf completion bash)

@@ -1,0 +1,41 @@
+[general]
+visible_settings = support;top_thickness;support_type;top_bottom;wall_thickness;material_bed_temperature;experimental;layer_height;infill_pattern;material_print_temperature;infill_sparse_density;retraction_enable;cooling;dual;adhesion_extruder_nr;travel;support_extruder_nr;platform_adhesion;blackmagic;support_angle;xy_offset;top_bottom_thickness;speed_print;cool_fan_speed;prime_tower_enable;shell;support_offset;top_layers;machine_settings;wall_line_count;support_structure;adhesion_type;prime_tower_position_y;meshfix;infill;support_enable;cool_fan_enabled;interlocking_enable;resolution;material;retraction_hop_enabled;bottom_thickness;bottom_layers;prime_blob_enable;speed;prime_tower_position_x
+last_run_version = 5.10.0
+accepted_user_agreement = True
+window_width = 1251
+window_height = 676
+window_left = 2582
+window_top = 742
+version = 7
+
+[view]
+settings_ypos = 60.0
+
+[cura]
+active_machine = Creality Ender-3 S1 Pro
+
+[info]
+
+[tool]
+
+[local_file]
+
+[gcodereader]
+
+[cura_drive]
+
+[backend]
+
+[layerview]
+
+[metadata]
+setting_version = 25
+
+[mesh]
+
+[um3networkprinting]
+
+[physics]
+
+[usb_printing]
+

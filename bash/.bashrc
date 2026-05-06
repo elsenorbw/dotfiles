@@ -12,7 +12,7 @@ PS1='[\u@\h \W]\$ '
 alias vi=nvim
 alias ll='ls -al'
 
-export PATH=$PATH:~/bin/
+export PATH=$PATH:~/bin/:~/.local/bin
 
 # execute starship
 eval "$(starship init bash)"
@@ -21,3 +21,14 @@ eval "$(starship init bash)"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 . <(asdf completion bash)
+
+# Kick off the ssh agent
+if ! pgrep -u "$USER" ssh-agent >/dev/null; then
+  ssh-agent -t 1h >"$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [ ! -f "$SSH_AUTH_SOCK" ]; then
+  source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
+
+source '/home/bmw/.bash_completions/comfy.sh'
+. ~/.asdf/plugins/java/set-java-home.bash
